@@ -1,2 +1,5 @@
-# Discussion1.1
-Java Program - 2 errors
+# web-231
+Introduction to JavaScript
+#contributors
+Professor Krasso - Bellevue University
+Ashleigh Lyman - Bellevue University
