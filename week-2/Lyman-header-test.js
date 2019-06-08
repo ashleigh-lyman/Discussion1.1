@@ -2,7 +2,8 @@
 ============================================
 ; Title:  header-test.js
 ; Author: Professor Krasso
-; Date:   25 June 2017
+; Date:   7 June 2019
+; Modified By: Ashleigh Lyman
 ; Description: Displays a formatted header
 ;===========================================
 */
