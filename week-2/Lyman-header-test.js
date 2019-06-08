@@ -1,7 +1,7 @@
 /*
 ============================================
 ; Title:  header-test.js
-; Author: Professor Krasso 
+; Author: Professor Krasso
 ; Date:   25 June 2017
 ; Description: Displays a formatted header
 ;===========================================
