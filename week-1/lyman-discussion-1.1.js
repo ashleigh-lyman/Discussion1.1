@@ -32,11 +32,11 @@ var lasName = 'Lyman';
 var street = "1000 Broadway";
 var city = "Lincoln";
 state = "Nebraska";
-var zipcode = "12345";
+var zipCode = "12345";
 
 //Output variables on separate lines
 
-console.display(firstName + \n + lastName + \n + street + \n + city + \n + state + \n + zipcode);
+console.display(firstName + '\n' + lastName + '\n' + street + '\n' + city + '\n' + state + '\n' + zipCode);
 
 //End Program
 
