@@ -1,10 +1,10 @@
 /*
 ====================
-Title: Assignment 4.1 Arrays
+Title: Assignment 4.2 Arrays
 Author: Ashleigh Lyman
 Date: 18 June 2019
 Modified by:
-Description: Program with array and 2 errors
+Description: Program calling fruit array function
 ;====================
 */
 
