@@ -18,18 +18,24 @@ Expected outcome:
 Ashleigh Lyman
 Exercise 5.1 - Keyed Collection program
 Current Date
+
+hello world
+
 */
+
+
 
 //Start Program
 
-//Array of fruits
-var fruits = new Array('orange', 'apple', 'apple', mango, 'orange', 'mango');
+// Declaring variable with map method
+var i = new Map();
 
-//Blank line
-console.log("");
+i.set('hello', 'world');
 
-//Use indexOf to locate and display first mention of selected item
-console.log(fruit.indexOf('mango'));
+//Use forEach method
+a.forEach((value, key,) => {
 
+  console.log(" ");
+  console.log(value + " " + key); });
 
 //End Program
