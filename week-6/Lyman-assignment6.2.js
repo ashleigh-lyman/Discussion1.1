@@ -16,28 +16,31 @@ console.log(header.display("Ashleigh", "Lyman", "Assignment 6.2 - Exception hand
 
 /*
   Expected output:
-  FirstName LastName
-  Assignment 6.2
+  Ashleigh Lyman
+  Assignment 6.2 - Exception handling
   Current Date
 
-  Catch clause: Cannot divide by zero
+  Catch clause: Wrong name given
   Finally clause reached...
+
 */
 
-//try variables to test
+console.log('\n');
+
 try {
-  var x = 0
-  var y = 1
-  var sum = y / x
+
+var firstName = "John";
 
   // if statement
-  if (sum === Infinity) throw 'Cannot divide by zero'
+  if (firstName != "Tom") throw 'Wrong name given'
 
 
   // output
-  console.log(sum)
+  console.log(firstName)
 } catch (error) {
   console.log('Catch clause: ' + error)
 } finally {
   console.log('Finally clause reached...')
-}
+};
+
+//End Program
