@@ -1,0 +1,28 @@
+/*
+============================================
+; Title:  site.css 7.3
+; Author: Ashleigh Lyman
+; Date:   11 July 2019
+; Description: styling for assignment 7.3
+;===========================================
+*/
+
+table {
+    border-collapse: collapse;
+}
+
+td,
+th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 5px;
+}
+
+th {
+    background-color: steelblue;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: lightsteelblue;
+}

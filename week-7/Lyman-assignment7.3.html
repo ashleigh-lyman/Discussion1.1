@@ -1,0 +1,78 @@
+<!--
+============================================
+; Title:  Assignment 7.3
+; Author: Ashleigh Lyman
+; Date:   11 July 2019
+; Modified By:
+; Description:
+;   Create an ordered list of five items and
+;   recreate into a table
+;===========================================
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Lyman Assignment 7.3</title>
+
+    <!-- Link to stylesheet site.css -->
+    <link rel="stylesheet" href="site.css">
+</head>
+
+<body>
+    <!-- display list using document.write() -->
+
+    <script>
+        document.write("<h1>SHOPPING LIST v.1</h1>" +
+            "<ol>" +
+            "<li>Oranges</li>" +
+            "<li>Apples</li>" +
+            "<li>Pears</li>" +
+            "<li>Limes</li>" +
+            "<li>Lemons</li>" +
+            "</ol>")
+    </script>
+
+    <div id="list"></div>
+
+    <!-- using innerHTML() create table in HTML -->
+    <script>
+        document.getElementById('list').innerHTML = "<h1>SHOPPING LIST v.2</h1>" +
+            "<table>" +
+            "<thead>" +
+            "<tr>" +
+            "<th>Id</th>" +
+            "<th>Item</th>" +
+            "</tr>" +
+            "</thead>" +
+            "<tbody>" +
+            "<tr>" +
+            "<td>1</td>" +
+            "<td>Oranges</td>" +
+            "</tr>" +
+            "<tr>" +
+            "<td>2</td>" +
+            "<td>Apples</td>" +
+            "</tr>" +
+            "<tr>" +
+            "<td>3</td>" +
+            "<td>Pears</td>" +
+            "</tr>" +
+            "<tr>" +
+            "<td>4</td>" +
+            "<td>Limes</td>" +
+            "</tr>" +
+            "<tr>" +
+            "<td>5</td>" +
+            "<td>Lemons</td>" +
+            "</tr>" +
+            "</tbody>" +
+            "</table>"
+    </script>
+
+</body>
+
+</html>
