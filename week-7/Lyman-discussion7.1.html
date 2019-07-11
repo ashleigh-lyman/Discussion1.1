@@ -1,0 +1,51 @@
+<!--
+============================================
+; Title:  Discussion 7.1 with 2 errors
+; Author: Ashleigh Lyman
+; Date:   11 July 2019
+; Modified By:
+; Description:
+; Create HTML page using JavaScript with 2 errors
+;===========================================
+-->
+
+
+<!-- Importing header file
+      const header = require('./Lyman-header.js');
+
+    Output header
+      console.log(header.display("Ashleigh", "Lyman", "Assignment 7.1 - HTML with JavaScript - 2 errors));
+ -->
+
+<h1>List of Colors</h1>
+<p id="list"></p>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Lyman Discussion 7.1</title>
+</head>
+
+<script>
+    var colors = [
+        "Red",
+        "Green",
+        "Blue"
+        "Yellow",
+        "Purple",
+        "Teal",
+        "Orange"
+    ];
+
+    //sort array in order alphabetically
+    color.sort();
+
+
+    //Use forEach method function to display list
+    colors.forEach(function(value) {
+        document.getElementById('list').innerHTML += value + "<br />";
+    });
+</script>
+
+<!-- End Program -->
