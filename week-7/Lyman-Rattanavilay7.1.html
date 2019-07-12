@@ -1,0 +1,39 @@
+<!--
+============================================
+; Title:  Discussion 7.1 - Fixed
+; Author: Thip Rattanavilay
+; Date:   12 July 2019
+; Modified By: Ashleigh Lyman
+; Description: Program with two (2) errors - Fixed
+;===========================================
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<!-- I added lang attribute-->
+
+<head>
+    <title>Today's date</title>
+</head>
+
+<body>
+
+    <time id="date"></time>
+
+    <script>
+        /*
+                          Create a JavaScript Date object for the current date and time,
+                          then extract the desired parts, then join them again in the desired format.
+                          */
+        var currentDate = new Date(), //** changed CurrentDate to currentDate
+            month = currentDate.getMonth() + 1,
+            day = currentDate.getDate(),
+            year = currentDate.getFullYear(),
+            date = month + "/" + day + "/" + year;
+        // Output the date to the above HTML element
+        document.getElementById("date").innerHTML = date; //** changed GetElementById to lowercase getElementById
+    </script>
+
+</body>
+
+</html>
