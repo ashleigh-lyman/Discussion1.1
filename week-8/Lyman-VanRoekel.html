@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("button").click(function() {
+                $("p").hide();
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("li").click(function() {
+                $("ul li:first").hide();
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+    <h2>This is the jQuery 2 Error Document</h2>
+
+    <p>This is a sentence that will hide when you click the button.</p>
+
+    <button>Click me</button>
+    <br>
+    <br>
+    <p1>List 1: Double click the word 'circle' and it will disappear.</p1>
+    <ul>
+        <li>Circle</li>
+        <li>Square</li>
+        <li>Rectangle</li>
+    </ul>
+    <br>
+
+</body>
+
+</html>
+
+
+/* ; Title: Exercise 8.1 jQuery Errors ; Author: Faye Van Roekel ; Date: 17 July 2019 ; Modified by: ; Description: jQuery Errors ; */
