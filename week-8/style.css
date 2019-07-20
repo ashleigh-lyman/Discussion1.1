@@ -1,0 +1,21 @@
+table {
+    border: 2px solid black;
+}
+
+th,
+td {
+    text-align: center;
+}
+
+th {
+    color: black;
+    background-color: yellow;
+}
+
+tr:nth-child(even) {
+    background-color: rgb(0, 174, 255);
+}
+
+tr:hover {
+    background-color: rgb(123, 201, 99);
+}

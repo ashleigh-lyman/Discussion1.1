@@ -1,3 +1,23 @@
+<!--
+============================================
+; Title:  Discussion 8.3 - jQuery
+; Author: Ashleigh Lyman
+; Date:   19 July 2019
+; Modified By:
+; Description:
+; Create HTML page with jquery functions
+;===========================================
+-->
+
+
+<!-- Importing header file
+      const header = require('./Lyman-header.js');
+
+    Output header
+      console.log(header.display("Ashleigh", "Lyman", "Assignment 8.3 - jQuery));
+ -->
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,16 +27,107 @@
     <title>Exercise 8.3</title>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <!-- you will need to the href to point to your root directories css file -->
-    <link rel="stylesheet" href="/path/to/your/root/css/file">
 
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet">
 </head>
+
 
 <body>
 
     <script type="text/javascript">
+        $(document).ready(function() {
+            $("button").click(function() {
+                $("#toggled").toggle();
+            });
+        });
+
+
+        $(function() {
+
+            $(".id").click(function(event) {
+
+                event.preventDefault();
+
+                var id = $(this).text();
+
+                var type = $(this).closest("td").next().text();
+
+                alert("{fruit_id: " + id + ", fruit_type: " + type + "}");
+
+            });
+
+        });
     </script>
 
-</body>
+    <h1>Lorem Ipsum</h1>
 
-</html>
+    <p id="toggled">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris scelerisque nec lorem a tempor. Donec venenatis ullamcorper arcu vel suscipit. Quisque euismod, mauris nec facilisis aliquet, sem diam congue purus, vitae rutrum mauris magna in elit. Donec
+        sapien eros, tristique et urna in, auctor faucibus libero. In convallis orci eget rutrum vulputate. Aenean nec lobortis augue. Aliquam eu enim nec ante sollicitudin efficitur congue et massa. Vivamus varius sed leo ac dapibus. Nunc imperdiet mi
+        lacinia eros dapibus, quis malesuada diam hendrerit. Quisque vestibulum, risus vel tristique mattis, ex metus convallis enim, ut fermentum risus nunc eu ante. Maecenas ultricies eleifend augue, non viverra arcu bibendum ut.
+
+    </p>
+
+    <button>Toggle</button>
+
+
+    <table>
+
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>TYPE</th>
+            </tr>
+        </thead>
+
+
+        <tbody>
+            <tr>
+                <td>
+                    <a href="#" class="id">1</a>
+                </td>
+                <td>
+                    <p class="type">Bananas</p>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <a href="#" class="id">2</a>
+                </td>
+                <td>
+                    <p class="type">Apples</p>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <a href="#" class="id">3</a>
+                </td>
+                <td>
+                    <p class="type">Orange</p>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <a href="#" class="id">4</a>
+                </td>
+                <td>
+                    <p class="type">Peaches</p>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <a href="#" class="id">5</a>
+                </td>
+                <td>
+                    <p class="type">Plums</p>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
