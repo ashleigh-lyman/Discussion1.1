@@ -19,3 +19,33 @@ tr:nth-child(even) {
 tr:hover {
     background-color: rgb(123, 201, 99);
 }
+
+#employee,
+tbody,
+tr:hover {
+    cursor: pointer;
+    background-color: #ffff99;
+}
+
+thead {
+    color: black;
+    font: bold
+}
+
+h1 {
+    font: 30px
+}
+
+th {
+    font: 18px
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table,
+th,
+td {
+    border: 1px solid #EAF1F7;
+}

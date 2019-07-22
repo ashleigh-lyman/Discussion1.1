@@ -2,21 +2,20 @@
 ============================================
 ; Title:  Discussion 8.4
 ; Author: Ashleigh Lyman
-; Date:   20 July 2019
+; Date:   22 July 2019
 ; Modified By:
 ; Description:
-;
+; Create employee array list and use functions
+; and forEach loop to iterate over array. Display
+; in table format
 ;===========================================
 -->
-
-
 <!-- Importing header file
       const header = require('./Lyman-header.js');
 
     Output header
       console.log(header.display("Ashleigh", "Lyman", "Assignment 8.4));
  -->
-
 
 
 <!DOCTYPE html>
@@ -27,44 +26,65 @@
     <title>Assignment 8.4</title>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
 
-    <!-- you will need to the href to point to your root directories css file -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="site.css">
 
-    <style type="text/css">
-        #employee tbody tr:hover {
-            cursor: pointer;
-            background-color: #ffff99;
-        }
-    </style>
 </head>
 
 <body>
 
     <div id="emps"></div>
 
-    <table id="empTable">
-        <thead>
-            <tr>
-                <th>Id</th>
-                <th>First Name</th>
-                <th>Last Name</th>
-                <th>Title</th>
-            </tr>
-        </thead>
-
-        <tbody>
-
-        </tbody>
-
-    </table>
-
-
     <script type="text/javascript">
-        // jQuery onClick event
-        // Don't remove this, just add your code to the body of the event (curly braces)
+        //Create employee function with parameters
+        function employee(id, firstName, lastName, title) {
+            this.id = id;
+            this.firstName = firstName;
+            this.lastName = lastName;
+            this.title = title;
+        }
+        //Employee array list
+        var employees = [
+            new employee(1, "Thomas", "Edison", "Software Engineer"),
+            new employee(2, "Benjamin", "Franklin", "Programmer"),
+            new employee(3, "Nikola", "Tesla", "Project Manager"),
+            new employee(4, "Charles", "Babbage", "Product Manager"),
+            new employee(5, "Alexander", "Bell", "Business Analyst")
+        ];
+
+        //getEmployee function uses forEach loop to iterate over list and display alert message when clicked
+        function getEmployee(id) {
+            employees.forEach(function(employee) {
+                if (employee.id === id) {
+                    alert(employee.id + " " + employee.firstName + " " + employee.lastName + " " + employee.title);
+                    return;
+                }
+            });
+        }
+
+        //Outputs heading and array list with specifications
+        var output = "<h1>Employee Listing</h1>";
+        output += "<table id='employee'>";
+        output += "<thead><tr><th>Id</th><th>First Name</th><th>Last Name</th><th>Title</th></tr></thead>";
+        output += "<tbody>";
+
+        //Calls employee function using loop
+        employees.forEach(function(employee) {
+            output += "<tr><td>" + employee.id + "</td>";
+            output += "<td>" + employee.firstName + "</td>";
+            output += "<td>" + employee.lastName + "</td>";
+            output += "<td>" + employee.title + "</td></tr>";
+        });
+
+        document.getElementById("emps").innerHTML = output;
+
+
         $(function() {
-            $("table tr").click(function() {})
+            $("table tr").click(function() {
+                var id = $(this).find("td:first").html();
+                getEmployee(parseInt(id));
+            })
         });
     </script>
 </body>
